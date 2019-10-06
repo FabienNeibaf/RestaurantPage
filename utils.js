@@ -55,7 +55,7 @@ export const csvals = (obj1, obj2) => {
   return false;
 };
 
-export const mount = (host, node) => {
+export const mount = (node, host) => {
   host.innerHTML = '';
   host.appendChild(node);
 };
