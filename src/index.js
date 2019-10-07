@@ -16,4 +16,4 @@ const tabCtrl = (() => {
   };
 })();
 
-mount(App(tabCtrl), document.getElementById('root'));
+mount(App(tabCtrl), document.getElementById('content'));

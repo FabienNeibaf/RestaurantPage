@@ -1,15 +1,8 @@
 import { el, mount } from '../utils';
 
-const Main = tab => {
-  const main = el(
-    'main',
-    null,
-    el('img', {
-      src:
-        'https://www.hotforfoodblog.com/wp-content/uploads/2019/01/ramenrolls_hotforfood_filtered2.jpg',
-    }),
-  );
-  tab.subscribe(e => {
+const Main = tabCtrl => {
+  const main = el('main');
+  tabCtrl.subscribe(e => {
     mount(e.content, main);
   });
   return main;

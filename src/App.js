@@ -1,13 +1,22 @@
+import Tab from './Tab';
 import Main from './Main';
-import Header from './Header';
-import Footer from './Footer';
 import { el } from '../utils';
 
 const App = tabCtrl => {
   return el('section', { id: 'app' }, [
-    Header(tabCtrl),
+    el('header', null, [
+      el('h1', null, el('a', { href: '/' }, 'Veganerse')),
+      el('nav', null, Tab(tabCtrl)),
+    ]),
     Main(tabCtrl),
-    Footer(),
+    el('footer', null, [
+      'Powered by ',
+      el(
+        'a',
+        { href: 'https://github.com/FabienNeibaf', target: '_blank' },
+        'Fabien'
+      ),
+    ]),
   ]);
 };
 
