@@ -5,7 +5,7 @@ import { el } from '../utils';
 const App = tabCtrl => {
   return el('section', { id: 'app' }, [
     el('header', null, [
-      el('h1', null, el('a', { href: '/' }, 'Veganerse')),
+      el('h1', null, 'Veganerse'),
       el('nav', null, Tab(tabCtrl)),
     ]),
     Main(tabCtrl),
