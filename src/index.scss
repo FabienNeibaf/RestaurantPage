@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: Lato;
+}
+
+body,
+html,
+#home,
+#content,
+#app {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-size: 14px;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+
+  h1 {
+    margin: 0;
+    color: #fff;
+    padding: 10px;
+    font-size: 2em;
+    text-align: center;
+    font-weight: normal;
+    background: #282624;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+
+  nav {
+
+    ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      list-style: none;
+
+      li {
+        flex: auto;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 1.5em;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+
+        &:first-of-type {
+          background: #ee8d2c;
+        }
+
+        &:last-of-type {
+          background: #dfddd1;
+        }
+      }
+    }
+  }
+}
+
+main {
+  flex: auto;
+  overflow: auto;
+  background: url('https://www.hotforfoodblog.com/wp-content/uploads/2019/01/ramenrolls_hotforfood_filtered2.jpg');
+  background-position: center center;
+}
+
+footer {
+  padding: 5px;
+  color: #fff;
+  text-align: center;
+  background: #282624;
+
+  a {
+    color: #ee8d2c;
+    text-decoration: none;
+  }
+}
+
+#menu {
+  margin: 0;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  overflow: auto;
+  flex-wrap: wrap;
+  list-style: none;
+  align-items: start;
+  justify-content: center;
+  background: rgba(25, 25, 25, 0.8);
+
+  li {
+    margin: 20px;
+    border-radius: 5px;
+    background: #fafafa;
+
+    img {
+      width: 250px;
+      height: 270px;
+      outline: none;
+      border-radius: 5px 5px 0 0;
+    }
+
+    h3 {
+      margin: 0;
+      padding: 10px;
+      text-align: center;
+    }
+  }
+}
+
+#contact {
+  height: 100%;
+  overflow: auto;
+  background: rgba(25, 25, 25, 0.8);
+
+  div {
+    margin: 5% auto;
+    max-width: 500px;
+    background: #fff;
+    border-radius: 5px;
+
+    h2 {
+      margin: 0;
+      color: #282624;
+      padding: 15px 10px;
+      background: #dfddd1;
+
+      &:first-child {
+        border-radius: 5px 5px 0 0;
+      }
+    }
+
+    p {
+      margin: 0;
+      font-size: 1.3em;
+      padding: 25px 10px;
+    }
+  }
+}
